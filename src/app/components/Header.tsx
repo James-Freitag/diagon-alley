@@ -5,6 +5,12 @@ interface NavProps {
 }
 
 const Header: React.FC<NavProps> = ({ handleCartToggle }) => {
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  const menuOpen = () => {
+    setMenuToggle(!menuToggle);
+  };
+
   return (
     <>
       <div className="container mx-auto px-6 py-3">
@@ -55,6 +61,7 @@ const Header: React.FC<NavProps> = ({ handleCartToggle }) => {
             <div className="flex sm:hidden">
               <button
                 type="button"
+                onClick={menuOpen}
                 className="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500"
                 aria-label="toggle menu"
               >
@@ -69,7 +76,7 @@ const Header: React.FC<NavProps> = ({ handleCartToggle }) => {
           </div>
         </div>
         <nav className="sm:flex sm:justify-center sm:items-center mt-4">
-          <div className="flex flex-col sm:flex-row">
+          <div className="hidden md:flex flex-col sm:flex-row">
             <a
               className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
               href="#"
@@ -101,6 +108,40 @@ const Header: React.FC<NavProps> = ({ handleCartToggle }) => {
               About
             </a>
           </div>
+          {menuToggle && (
+            <div className="flex flex-col sm:flex-row">
+              <a
+                className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
+                href="#"
+              >
+                Home
+              </a>
+              <a
+                className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
+                href="#"
+              >
+                Shop
+              </a>
+              <a
+                className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
+                href="#"
+              >
+                Categories
+              </a>
+              <a
+                className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
+                href="#"
+              >
+                Contact
+              </a>
+              <a
+                className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
+                href="#"
+              >
+                About
+              </a>
+            </div>
+          )}
         </nav>
         <div className="relative mt-6 max-w-lg mx-auto">
           <span className="absolute inset-y-0 left-0 pl-3 flex items-center">
