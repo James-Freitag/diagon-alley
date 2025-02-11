@@ -1,0 +1,31 @@
+Possible colors ------
+  Background => Dark Green or Dark Burgundy
+  Accent Text => Brass or Golden Yellow
+  Buttons => Charcoal Gray with Golden Yellow hover effect
+  Links => Brass or Maroon with hover transition
+
+----------- Bg Color --> Deep Burgundy #4B002D
+----------- Accent Text --> Golden Yellow #D4AF37
+----------- Buttons --> Charcoal Gray #272727
+----------- Links --> Charcoal Brass #B5A642 // Hover --> #800020
+----------- Text --> #f5f5e6
+
+// Headings: 
+  The brass or gold against the green or Burgundy
+
+// Body Text: 
+  A light, contrasting color...off white/cream or light beige
+
+// Links:
+  Maroon color (Hover color) or the brass/gold color
+
+ //////// Possible Fonts //////
+  - Classic / Magical
+    Headings -> (shop names, section titles) -> Trajan Pro | Playfair Display | Cinzel
+    Body Text -> (products, descriptions, shopkeepers notes) -> Lora | Merriweather | Open Sans
+
+  - Whimsical / Magical
+    Headings -> Abril Fatface | Lobster Two | Bangers
+    Body Text -> Lago | Source Sans Pro
+
+
