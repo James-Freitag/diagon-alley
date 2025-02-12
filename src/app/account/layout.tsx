@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/forgot-password", label: "Forgot Password" },
-  { href: "/login", label: "Login" },
-  { href: "/register", label: "Register" },
+  { href: "/account/forgot-password", label: "Forgot Password" },
+  { href: "/account/login", label: "Login" },
+  { href: "/account/register", label: "Register" },
 ];
 
 export default function AccountLayout({
@@ -33,7 +33,7 @@ export default function AccountLayout({
           ))}
         </nav>
       </aside>
-      <main>
+      <main className="flex justify-center items-center mx-auto">
         <div>{children}</div>
       </main>
     </section>

@@ -4,7 +4,7 @@ import weasleyShop from "../../../public/weasleys/weasley-shop.png";
 const Weasleys = () => {
   return (
     <section className="min-h-screen flex justify-center mx-auto pt-8 pb-16 px-6 z-50">
-      <div className="relative md:bg-black">
+      <div className="relative md:bg-black h-fit">
         <p className="md:absolute z-10 bottom-1/3 left-6 md:max-w-[500px] mx-auto pb-2 md:pb-0 text-[#f5f5e6]">
           <span className="text-lg font-semibold text-[#D4AF37]">
             Welcome to Weasleys' Wizard Wheezes
