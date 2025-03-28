@@ -7,7 +7,12 @@ const Navigation = () => {
   const pathName = usePathname();
   return (
     <nav className="sticky top-0 z-[9999] h-16 flex justify-between items-center px-4 lg:px-12 bg-[#272727] text-[#f5f5e6] ">
-      <div>Logo</div>
+      <Image
+        src="/favicon.png"
+        alt="diagon alley logo"
+        width={60}
+        height={60}
+      />
       <ul className="flex space-x-4 font-lg font-semibold capitalize justify-center items-center ">
         <li
           className={

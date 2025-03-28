@@ -4,7 +4,7 @@ const Footer = () => {
       <ul className="flex flex-col justify-center items-center text-center">
         <li>&copy;Diagon Alley - 2025</li>
         <li>- Tools Used -</li>
-        <li>Next Js | Tailwindcss | Postgres</li>
+        <li>Next Js | Tailwindcss | Turso</li>
       </ul>
     </footer>
   );

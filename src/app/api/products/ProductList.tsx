@@ -9,7 +9,7 @@ const db = createClient({
   authToken: process.env.TUSRO_AUTH_TOKEN!,
 });
 
-type Product = {
+export type Product = {
   id: string;
   name: string;
   img: string;
@@ -18,7 +18,6 @@ type Product = {
   price: number;
 };
 
-// server side fetch from turso
 async function getProducts() {
   const products = await db.execute(
     "SELECT products.*, categories.name as category FROM products JOIN categories ON products.category_id = categories.id"
@@ -29,7 +28,6 @@ async function getProducts() {
 export default async function ProductList() {
   const products = await getProducts();
 
-  // Group products by category
   const groupedProducts = products.reduce<{ [key: string]: Product[] }>(
     (acc, product) => {
       if (!acc[product.category]) {
